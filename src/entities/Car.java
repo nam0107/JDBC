@@ -86,5 +86,9 @@ public class Car {
     public void setStoreId(int storeId) {
         this.storeId = storeId;
     }
-    
+    public Object[] toObject() {
+        return new Object[]{
+            this.id,this.name,this.seatNum,this.regYear,this.exaYear,this.price,this.storeId
+        };
+    }
 }

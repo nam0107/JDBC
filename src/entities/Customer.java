@@ -69,6 +69,10 @@ public class Customer {
         this.idCard = idCard;
     }
 
-    
+    public Object[] toObject() {
+        return new Object[]{
+            this.id,this.name,this.yearOfBirth,this.idCard
+        };
+    }
   
 }

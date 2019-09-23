@@ -67,5 +67,9 @@ public class Hiring {
         this.carId = carId;
     }
     
-    
+    public Object[] toObject() {
+        return new Object[]{
+            this.id,this.startDate,this.endDate,this.customerId,this.carId
+        };
+    }
 }

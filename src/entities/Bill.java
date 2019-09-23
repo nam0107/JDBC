@@ -47,4 +47,9 @@ public class Bill {
         this.hiringId = hiringId;
     }
     
+    public Object[] toObject() {
+        return new Object[]{
+            this.id,this.amount,this.hiringId
+        };
+    }
 }

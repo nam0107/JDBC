@@ -5,6 +5,7 @@
  */
 package run;
 
+import entities.Car;
 import entities.Store;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,5 +38,11 @@ public class RunTest {
 //        storeModel.deleteStore(1);
 
         // cacs model con lai test tuong tu
+        CarModel carModel = new CarModel();
+        List<Car> car = new ArrayList<>();
+        car = carModel.getAllCar();
+        for (Car s : car) {
+            System.out.println(s.getId() + "\t" + s.getName()+ "\t" + s.getSeatNum()+ "\t" + s.getPrice());
+        }
     }
 }

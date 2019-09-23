@@ -10,6 +10,7 @@ package entities;
  * @author hoain
  */
 public class Store {
+
     private int id;
     private String name;
     private String address;
@@ -56,5 +57,10 @@ public class Store {
     public void setDescription(String description) {
         this.description = description;
     }
-    
+
+    public Object[] toObject() {
+        return new Object[]{
+            this.id, this.name, this.address, this.description
+        };
+    }
 }
